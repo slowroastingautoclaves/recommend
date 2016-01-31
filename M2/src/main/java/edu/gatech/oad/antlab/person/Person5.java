@@ -34,7 +34,7 @@ public class Person5 {
 	  char[] str = input.toCharArray();
       String res = "";
       for (int i = 0; i < str.length; i++) {
-          res += str[((i + 2) % str.length)];
+          res += str[(i + 2) % str.length];
       }
 	  return res;
 	}
