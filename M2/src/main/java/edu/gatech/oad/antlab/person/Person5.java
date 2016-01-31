@@ -31,7 +31,12 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
-	  return null;
+	  char[] str = input.toCharArray();
+      String res = "";
+      for (int i = 0; i < str.length; i++) {
+          res += str[((i + 2) % str.length)];
+      }
+	  return res;
 	}
 	
 	/**
