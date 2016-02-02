@@ -5,8 +5,8 @@ package edu.gatech.oad.antlab.person;
  *  returns their name and a
  *  modified string 
  *
- * @author Bob
- * @version 1.1
+ * @author Bob and Christian Giral
+ * @version 1.2
  */
 public class Person2 {
     /** Holds the persons real name */
@@ -31,7 +31,16 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+		String out = "";
+		java.util.List<Integer> indices = new java.util.ArrayList<Integer>();
+		for (int i = 0; i < input.length(); i++) {
+			indices.add(i);
+		}
+		java.util.Collections.shuffle(indices);
+		for (int i = 0; i < input.length(); i++) {
+			out += input.charAt(indices.get(i));
+		}
+		return out;
 	}
 	/**
 	 * Return a string rep of this object
