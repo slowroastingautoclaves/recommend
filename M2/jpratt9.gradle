@@ -6,7 +6,7 @@ version = '1'
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'Diptodip Gradle',
+        attributes 'Implementation-Title': 'John Gradle',
                    'Implementation-Version': version,
                    'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
                    'Class-Path': 'lib/resources.jar'
