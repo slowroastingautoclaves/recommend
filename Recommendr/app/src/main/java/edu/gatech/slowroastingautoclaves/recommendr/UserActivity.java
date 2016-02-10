@@ -20,6 +20,7 @@ public class UserActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent userIntent = new Intent(UserActivity.this, LoginActivity.class);
                 startActivity(userIntent);
+                finish();
             }
         });
     }
